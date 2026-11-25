@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Temple town and hills along a Karnataka travel route">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dce8de"/>
+      <stop offset="0.55" stop-color="#f3ecdc"/>
+      <stop offset="1" stop-color="#f8f4ea"/>
+    </linearGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a9c1b0"/>
+      <stop offset="1" stop-color="#8aa795"/>
+    </linearGradient>
+    <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#88a48f"/>
+      <stop offset="1" stop-color="#647f6d"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59695f"/>
+      <stop offset="1" stop-color="#33453b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1120" cy="250" r="140" fill="#f2d6a2" opacity="0.7"/>
+  <circle cx="1120" cy="250" r="84" fill="#efc98a"/>
+
+  <path d="M0 580c230-96 420-96 640-16 210 76 420 50 620-18 130-44 250-40 340-4v130H0Z" fill="url(#far)" opacity="0.75"/>
+  <path d="M0 660c240-70 460-70 680 0 210 66 480 50 700-26 90-30 170-32 220-20v108H0Z" fill="url(#mid)"/>
+
+  <g>
+    <rect x="360" y="640" width="420" height="150" fill="#c9a17c"/>
+    <rect x="380" y="620" width="380" height="34" fill="#b58c68"/>
+    <path d="M420 620h300l-26-64H446Z" fill="#a97b57"/>
+    <path d="M462 556h216l-22-58H484Z" fill="#a97b57"/>
+    <path d="M500 498h140l-18-52H518Z" fill="#a97b57"/>
+    <path d="M530 446h80l-14-42h-52Z" fill="#a97b57"/>
+    <path d="M552 404h36l-8-28h-20Z" fill="#a97b57"/>
+    <rect x="556" y="688" width="48" height="102" rx="24" fill="#4f3b2c"/>
+    <circle cx="570" cy="364" r="10" fill="#d9a441"/>
+    <path d="M570 354v-22" stroke="#d9a441" stroke-width="5" stroke-linecap="round"/>
+    <path d="M446 556h248M484 498h176M518 446h108" stroke="#8c684c" stroke-width="4" opacity="0.5"/>
+  </g>
+
+  <g>
+    <rect x="250" y="690" width="26" height="120" rx="8" fill="#7a5b42"/>
+    <circle cx="263" cy="660" r="56" fill="#6f8e79"/>
+    <rect x="900" y="700" width="24" height="110" rx="8" fill="#7a5b42"/>
+    <circle cx="912" cy="672" r="50" fill="#7e9c86"/>
+    <circle cx="960" cy="710" r="34" fill="#6f8e79"/>
+  </g>
+
+  <path d="M0 1000c160-120 420-210 760-250 240-28 540-10 840 70v180Z" fill="#31453a"/>
+  <path d="M430 1000c90-120 300-198 560-224 180-18 420-2 610 54v170Z" fill="url(#road)"/>
+  <path d="M870 1000c20-100 90-170 210-206" stroke="#efe8d8" stroke-width="9" stroke-linecap="round" stroke-dasharray="42 38" opacity="0.6"/>
+
+  <g transform="translate(1080 706)">
+    <path d="M0 54c4-28 26-44 58-48h108c30 4 50 20 58 48l6 22H0Z" fill="#355c49"/>
+    <rect x="62" y="16" width="58" height="26" rx="6" fill="#cfe0d8"/>
+    <rect x="134" y="16" width="36" height="26" rx="6" fill="#cfe0d8"/>
+    <circle cx="56" cy="78" r="18" fill="#1d2e25"/>
+    <circle cx="184" cy="78" r="18" fill="#1d2e25"/>
+    <circle cx="56" cy="78" r="7" fill="#b9c9c0"/>
+    <circle cx="184" cy="78" r="7" fill="#b9c9c0"/>
+    <rect x="96" y="6" width="34" height="6" rx="3" fill="#d9a441"/>
+  </g>
+
+  <g stroke="#4f6b5c" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6">
+    <path d="M760 210c14-10 28-10 42 0"/>
+    <path d="M820 186c10-8 20-8 30 0"/>
+    <path d="M690 168c12-9 24-9 36 0"/>
+  </g>
+</svg>

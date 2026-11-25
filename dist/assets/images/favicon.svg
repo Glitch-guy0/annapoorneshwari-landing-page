@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Annapoorneshwari Tours and Travellers">
+  <rect width="32" height="32" rx="8" fill="#355c49"/>
+  <path d="M10 25c1-7 3.5-12 8-16" fill="none" stroke="#e5eee7" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="23" cy="9" r="3" fill="#d9a441"/>
+  <path d="M8 26h14" stroke="#e5eee7" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+</svg>

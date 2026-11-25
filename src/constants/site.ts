@@ -12,7 +12,7 @@ export const BRAND = {
   description:
     "Bangalore-based airport transfers, employee and school/college pick & drop, and tourist transportation across Karnataka and Pan-India.",
   logo: {
-    src: asset("assets/images/logo.svg"),
+    src: asset("assets/images/logo.png"),
     width: 300,
     height: 87,
     alt: "Annapoorneshwari Tours & Travellers",
@@ -85,5 +85,10 @@ export const PAGE_META = {
     title: "Service Gallery — Annapoorneshwari Tours & Travellers",
     description:
       "Explore Bangalore-based airport pick & drop, employee and school/college commutes, Karnataka and Pan-India tourist travel, and monthly contract transport services.",
+  },
+  license: {
+    title: "Terms & License — Annapoorneshwari Tours & Travellers",
+    description:
+      "Proprietary notice, strict copyright terms, and restricted license information for Annapoorneshwari Tours & Travellers.",
   },
 };

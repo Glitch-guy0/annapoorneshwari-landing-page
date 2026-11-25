@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CallCta } from "@/components/common/call-cta";
 import { WhatsAppCta } from "@/components/common/whatsapp-cta";
 import { NavItemLink } from "@/components/layout/nav-item-link";
@@ -67,6 +68,14 @@ export function SiteFooter() {
 
         <div className="flex flex-wrap items-center justify-between gap-4 pt-6 text-sm text-muted">
           <p>{FOOTER_COPY.copyright}</p>
+          <div className="flex items-center gap-4">
+            <Link
+              to="/license"
+              className="text-xs text-muted underline underline-offset-2 transition-colors hover:text-ink"
+            >
+              Terms & License
+            </Link>
+          </div>
         </div>
       </Container>
     </footer>

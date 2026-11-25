@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 850" width="1920" height="850" role="img" aria-label="Scenic road through the hills at golden hour">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9dbbae"/>
+      <stop offset="0.55" stop-color="#d5e2d8"/>
+      <stop offset="1" stop-color="#f1e4cb"/>
+    </linearGradient>
+    <linearGradient id="hills" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6c8a79"/>
+      <stop offset="1" stop-color="#486655"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#314c3e"/>
+      <stop offset="1" stop-color="#1c2f26"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b6a60"/>
+      <stop offset="1" stop-color="#3a4a41"/>
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6dfb4" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#f6dfb4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="850" fill="url(#sky)"/>
+  <circle cx="1465" cy="315" r="190" fill="url(#sunGlow)"/>
+  <circle cx="1465" cy="315" r="96" fill="#f3d9a6" opacity="0.9"/>
+
+  <path d="M0 545c180-70 320-95 500-52 160 38 280 12 420-38 190-68 400-52 600 26 150 58 260 62 400 28v240H0Z" fill="url(#hills)" opacity="0.75"/>
+  <path d="M0 620c210-64 390-78 570-30 180 48 330 32 520-24 190-56 430-40 630 44 80 32 140 40 200 42v198H0Z" fill="#3f5c4b"/>
+  <rect y="640" width="1920" height="210" fill="url(#ground)"/>
+
+  <path d="M690 850 1010 655c40-26 100-26 140 0l320 195Z" fill="url(#road)"/>
+  <path d="M905 850c-4-62-4-124 0-186" stroke="#e9e4d6" stroke-width="9" stroke-linecap="round" stroke-dasharray="34 30" opacity="0.65"/>
+
+  <g opacity="0.9">
+    <path d="M1268 646c10-38 34-62 66-72l150-4c30 10 50 34 60 72l10 34h-296Z" fill="#eef1e9"/>
+    <rect x="1292" y="590" width="112" height="42" rx="8" fill="#9fb7ac"/>
+    <rect x="1416" y="590" width="62" height="42" rx="8" fill="#9fb7ac"/>
+    <rect x="1268" y="652" width="296" height="26" rx="8" fill="#355c49"/>
+    <circle cx="1322" cy="688" r="24" fill="#22352b"/>
+    <circle cx="1500" cy="688" r="24" fill="#22352b"/>
+    <circle cx="1322" cy="688" r="9" fill="#b9c9c0"/>
+    <circle cx="1500" cy="688" r="9" fill="#b9c9c0"/>
+    <rect x="1384" y="570" width="44" height="8" rx="4" fill="#d9a441"/>
+  </g>
+
+  <g fill="#23392e">
+    <path d="M420 720l-52-150h104Z"/>
+    <path d="M420 620l-40-108h80Z"/>
+    <rect x="414" y="700" width="12" height="40"/>
+    <path d="M1640 690l-44-126h88Z"/>
+    <path d="M1640 604l-34-94h68Z"/>
+    <rect x="1635" y="674" width="10" height="34"/>
+  </g>
+
+  <g stroke="#2f4a3c" stroke-width="3" stroke-linecap="round" opacity="0.55" fill="none">
+    <path d="M240 220c16-12 32-12 48 0"/>
+    <path d="M296 196c12-9 24-9 36 0"/>
+    <path d="M1180 180c14-10 28-10 42 0"/>
+  </g>
+
+  <g opacity="0.35" stroke="#f1eadb" stroke-width="2">
+    <path d="M0 760h1920"/>
+    <path d="M0 810h1920"/>
+  </g>
+</svg>

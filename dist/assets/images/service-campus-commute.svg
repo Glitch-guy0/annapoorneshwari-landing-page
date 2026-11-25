@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="School building and campus shuttle bus">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2e7d8"/>
+      <stop offset="0.6" stop-color="#f8f3ea"/>
+      <stop offset="1" stop-color="#f7f9f6"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d5e3e8"/>
+      <stop offset="1" stop-color="#9db7c0"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#586a60"/>
+      <stop offset="1" stop-color="#2f4138"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1320" cy="220" r="90" fill="#f0c987" opacity="0.55"/>
+
+  <path d="M0 700c180-26 340-18 520 10 220 34 420 14 640-16 160-22 300-14 440 12v80H0Z" fill="#cddcc9"/>
+
+  <g>
+    <rect x="110" y="400" width="560" height="310" rx="8" fill="#fbf8f1"/>
+    <path d="M80 404 390 268l310 136Z" fill="#355c49"/>
+    <rect x="130" y="430" width="520" height="16" fill="#e5eee7"/>
+    <g fill="url(#glass)">
+      <rect x="160" y="480" width="88" height="70" rx="6"/>
+      <rect x="282" y="480" width="88" height="70" rx="6"/>
+      <rect x="404" y="480" width="88" height="70" rx="6"/>
+      <rect x="526" y="480" width="88" height="70" rx="6"/>
+      <rect x="160" y="580" width="88" height="70" rx="6"/>
+      <rect x="282" y="580" width="88" height="70" rx="6"/>
+      <rect x="526" y="580" width="88" height="70" rx="6"/>
+    </g>
+    <rect x="404" y="580" width="88" height="130" rx="6" fill="#355c49"/>
+    <circle cx="470" cy="648" r="5" fill="#e5eee7"/>
+    <circle cx="390" cy="360" r="26" fill="#fbf8f1"/>
+    <path d="M390 344v16l12 8" stroke="#355c49" stroke-width="4" stroke-linecap="round"/>
+    <path d="M650 400v-110" stroke="#53635a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M650 296h72l-18 26 18 26h-72Z" fill="#d9a441"/>
+  </g>
+
+  <g>
+    <rect x="1090" y="470" width="60" height="250" rx="18" fill="#8c6a4f"/>
+    <circle cx="1120" cy="410" r="92" fill="#7f9d8b"/>
+    <circle cx="1050" cy="458" r="66" fill="#6c8a79"/>
+    <circle cx="1190" cy="458" r="66" fill="#6c8a79"/>
+    <rect x="1420" y="570" width="30" height="130" rx="10" fill="#8c6a4f"/>
+    <circle cx="1435" cy="540" r="58" fill="#8fae99"/>
+    <circle cx="1388" cy="572" r="40" fill="#7f9d8b"/>
+  </g>
+
+  <rect y="760" width="1600" height="240" fill="url(#road)"/>
+  <path d="M0 890h1600" stroke="#efe9da" stroke-width="8" stroke-dasharray="54 44" opacity="0.62"/>
+
+  <g>
+    <rect x="760" y="560" width="660" height="200" rx="26" fill="#e9c98d"/>
+    <rect x="760" y="560" width="660" height="30" rx="15" fill="#d9a441"/>
+    <path d="M760 644h660v44H760Z" fill="#355c49"/>
+    <g fill="#f8f3ea">
+      <rect x="792" y="600" width="96" height="38" rx="6"/>
+      <rect x="908" y="600" width="96" height="38" rx="6"/>
+      <rect x="1024" y="600" width="96" height="38" rx="6"/>
+      <rect x="1140" y="600" width="96" height="38" rx="6"/>
+    </g>
+    <rect x="1256" y="598" width="132" height="128" rx="10" fill="#f3ede1"/>
+    <rect x="1272" y="614" width="100" height="64" rx="6" fill="url(#glass)"/>
+    <rect x="1320" y="682" width="12" height="34" rx="6" fill="#355c49"/>
+    <circle cx="880" cy="764" r="46" fill="#22352b"/>
+    <circle cx="880" cy="764" r="18" fill="#b9c9c0"/>
+    <circle cx="1320" cy="764" r="46" fill="#22352b"/>
+    <circle cx="1320" cy="764" r="18" fill="#b9c9c0"/>
+    <rect x="1370" y="660" width="30" height="16" rx="8" fill="#f0c46a"/>
+  </g>
+
+  <g fill="#355c49" opacity="0.9">
+    <circle cx="700" cy="900" r="7"/>
+    <circle cx="1460" cy="920" r="6"/>
+    <circle cx="240" cy="930" r="6"/>
+  </g>
+</svg>
