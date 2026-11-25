@@ -1,0 +1,1350 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Annapoorneshwari Tours &amp; Travellers — Thoughtfully Planned Travel</title>
+    <meta name="description" content="Bangalore-based Annapoorneshwari Tours &amp; Travellers offers airport pickup &amp; drop, employee and school/college transportation, monthly contracts, and tourist travel across Karnataka and Pan-India.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Annapoorneshwari Tours &amp; Travellers">
+    <meta property="og:description" content="Bangalore-based airport pickup &amp; drop, employee and school/college transportation, and Pan-India tourist vehicle services. Chat with us on WhatsApp to enquire.">
+    <meta property="og:image" content="assets/images/banner7.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+      /* OD-LAYOUT-PRIMITIVES v1 — structure only: display, flex/grid, overflow, wrapping, ratio, geometry.
+         Put this @layer first; product CSS outside the layer wins ordinary layout rules.
+         Native hidden and closed-dialog states take precedence over component display rules. */
+      @layer od-layout {
+        [hidden]:not([hidden="until-found" i]) { display: none !important; }
+        dialog:not([open]) { display: none !important; }
+
+        :where(.od-stack,.od-row,.od-row-top,.od-cluster,.od-grid,.od-field,.od-stat,.od-cell,.od-tile) > :where(*) { min-width: 0; }
+
+        /* containers */
+        .od-stack   { display: flex; flex-direction: column; gap: var(--od-gap, 8px); }
+        .od-row     { display: flex; align-items: center; gap: var(--od-gap, 8px); }
+        .od-row-top { display: flex; align-items: flex-start; gap: var(--od-gap, 8px); }
+        .od-cluster { display: flex; flex-wrap: wrap; align-items: center; gap: var(--od-gap, 8px); }
+        .od-fill    { flex: 1 1 0; min-width: 0; }
+        .od-fixed   { flex: none; }
+        .od-grid    { display: grid; gap: var(--od-gap, 12px); grid-template-columns: repeat(var(--od-cols, 3), minmax(0, 1fr)); }
+
+        /* stacked information: each piece is its own line — never sibling inline spans */
+        .od-stat, .od-field, .od-cell { display: grid; gap: var(--od-gap, 2px); }
+        :where(.od-stat,.od-field,.od-cell) > :where(*) { display: block; }
+        .od-tile { display: grid; grid-template-rows: auto 1fr; }
+        :where(.od-tile) > :where(*) { display: block; }
+
+        /* media keeps its intrinsic ratio by default; never a distorted or cropped
+           cover by accident. height:auto lets the ratio win over an <img height="…">
+           attribute. Cropping to a uniform box is an explicit opt-in: set --od-ratio
+           AND add .od-media-cover together (per the core rule, only where a crop is
+           deliberate — tile thumbs, decorative fills — never on full-frame content). */
+        .od-media { display: block; width: 100%; height: auto; aspect-ratio: var(--od-ratio, auto); }
+        .od-media-cover { object-fit: cover; }
+
+        /* functional inline SVG icons opt into bounded geometry; content SVGs keep their own */
+        .od-icon { display: inline-block; inline-size: var(--od-icon-size, 1em); block-size: var(--od-icon-size, 1em); flex: none; }
+
+        /* data text only — authored copy is rewritten to its budget instead */
+        .od-truncate { display: block; max-width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+        .od-clamp-2, .od-clamp-3 { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+        .od-clamp-2 { -webkit-line-clamp: 2; }
+        .od-clamp-3 { -webkit-line-clamp: 3; }
+        .od-lines-2 { min-height: calc(2 * 1.4em); }
+        .od-nowrap  { white-space: nowrap; }
+        .od-keep    { word-break: keep-all; overflow-wrap: anywhere; }
+
+        /* screen skeleton (optional) */
+        .od-screen { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; height: 100%; }
+        .od-scroll { overflow-y: auto; overscroll-behavior: contain; min-height: 0; }
+
+        /* horizontal rail */
+        .od-rail { display: flex; gap: var(--od-gap, 8px); overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none;
+                   padding-inline: var(--od-rail-pad, 16px); scroll-padding-inline: var(--od-rail-pad, 16px); }
+        .od-rail::-webkit-scrollbar { display: none; }
+        :where(.od-rail) > :where(*) { flex: none; scroll-snap-align: start; }
+        :where(.od-rail) > :where(:last-child) { margin-inline-end: var(--od-rail-pad, 16px); }
+
+        .od-spacer { flex: none; visibility: hidden; pointer-events: none; }
+        .od-touch  { min-width: 44px; min-height: 44px; }
+      }
+      :root [hidden]:where(:not([hidden="until-found" i])) { display: none; }
+      /* /OD-LAYOUT-PRIMITIVES v1 */
+
+      :root {
+        /* Brand & surface palette */
+        --primary: #355c49;
+        --primary-hover: #2b4c3c;
+        --primary-active: #223d30;
+        --primary-on: #ffffff;
+        --bg: #f7f9f6;
+        --bg-sage: #e5eee7;
+        --bg-blue: #e4edf2;
+        --bg-sand: #f1e8dc;
+        --surface: #ffffff;
+        --text-primary: #26352d;
+        --text-secondary: #53635a;
+        --text-on-sage: #3d4d44;
+        --border: #dce4dd;
+        --border-strong: #c6d3c8;
+
+        /* Typography */
+        --font-sans: "Figtree", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --text-hero: clamp(2.125rem, 4.4vw, 3.625rem);
+        --text-h2: clamp(1.75rem, 3vw, 2.375rem);
+        --text-lg: 1.125rem;
+        --text-base: 1rem;
+        --text-sm: 0.875rem;
+
+        /* 8px spacing scale & layout */
+        --space-1: 8px;
+        --space-2: 16px;
+        --space-3: 24px;
+        --space-4: 32px;
+        --space-5: 40px;
+        --space-6: 48px;
+        --space-8: 64px;
+        --space-10: 80px;
+        --space-12: 96px;
+        --container-max: 1200px;
+        --gutter: 24px;
+
+        /* Radii & elevation */
+        --radius-btn: 10px;
+        --radius-card: 16px;
+        --shadow-subtle: 0 8px 24px rgba(38, 53, 45, 0.05);
+        --focus-ring: 0 0 0 3px rgba(53, 92, 73, 0.28);
+
+        /* Motion */
+        --duration-fast: 160ms;
+        --duration-base: 220ms;
+        --ease-out: cubic-bezier(0.2, 0, 0, 1);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+        position: relative;
+        min-height: 100vh;
+        background-color: var(--bg);
+        color: var(--text-primary);
+        font-family: var(--font-sans);
+        font-size: var(--text-base);
+        font-weight: 400;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      /* Hero background image with opaque-left to transparent-right shadow (landscape desktop only) */
+      .page-backdrop {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        overflow: hidden;
+        background-color: #121e18;
+      }
+
+      .page-backdrop-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      .page-backdrop-scrim {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(18, 30, 24, 1) 0%,
+          rgba(18, 30, 24, 0.96) 28%,
+          rgba(18, 30, 24, 0.72) 52%,
+          rgba(18, 30, 24, 0.24) 76%,
+          rgba(18, 30, 24, 0) 100%
+        );
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      ul {
+        margin: 0;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      button {
+        font: inherit;
+        color: inherit;
+      }
+
+      :focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 2px;
+        box-shadow: var(--focus-ring);
+      }
+
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 8px;
+        z-index: 100;
+        padding: 10px 16px;
+        border-radius: var(--radius-btn);
+        background: var(--primary);
+        color: var(--primary-on);
+        font-size: var(--text-sm);
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .skip-link:focus {
+        left: 16px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: var(--container-max);
+        margin-inline: auto;
+        padding-inline: var(--gutter);
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 44px;
+        padding: 10px 20px;
+        border: 1px solid transparent;
+        border-radius: var(--radius-btn);
+        font-size: var(--text-sm);
+        font-weight: 600;
+        line-height: 1.2;
+        text-decoration: none;
+        cursor: pointer;
+        transition:
+          background-color var(--duration-fast) var(--ease-out),
+          border-color var(--duration-fast) var(--ease-out),
+          color var(--duration-fast) var(--ease-out),
+          transform var(--duration-fast) var(--ease-out);
+      }
+
+      .btn-primary {
+        background-color: var(--primary);
+        color: var(--primary-on);
+      }
+
+      @media (hover: hover) {
+        .btn-primary:hover {
+          background-color: var(--primary-hover);
+          transform: translateY(-1px);
+        }
+      }
+
+      .btn-primary:active {
+        background-color: var(--primary-active);
+        transform: translateY(0);
+      }
+
+      .btn-secondary {
+        background-color: var(--surface);
+        color: var(--text-primary);
+        border-color: var(--border-strong);
+      }
+
+      @media (hover: hover) {
+        .btn-secondary:hover {
+          background-color: var(--bg);
+          border-color: var(--primary);
+        }
+      }
+
+      .btn-lg {
+        min-height: 48px;
+        padding: 12px 24px;
+        font-size: var(--text-base);
+      }
+
+      /* A. Header */
+      .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 40;
+        background-color: rgba(247, 249, 246, 0.94);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-2);
+        min-height: 72px;
+        padding-block: 12px;
+      }
+
+      .brand-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        min-height: 44px;
+        text-decoration: none;
+        color: var(--text-primary);
+        min-width: 0;
+      }
+
+      .brand-logo {
+        flex: none;
+        display: block;
+        width: clamp(132px, 24vw, 172px);
+        height: auto;
+        aspect-ratio: 300 / 87;
+        object-fit: contain;
+      }
+
+      .header-nav {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex: none;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .nav-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 8px 14px;
+        border-radius: var(--radius-btn);
+        font-size: var(--text-sm);
+        font-weight: 500;
+        color: var(--text-secondary);
+        text-decoration: none;
+        white-space: nowrap;
+        transition:
+          color var(--duration-fast) var(--ease-out),
+          background-color var(--duration-fast) var(--ease-out);
+      }
+
+      .nav-link[aria-current="page"] {
+        background-color: var(--bg-sage);
+        color: var(--primary);
+        font-weight: 600;
+      }
+
+      @media (hover: hover) {
+        .nav-link:hover {
+          color: var(--text-primary);
+          background-color: var(--bg-sage);
+        }
+      }
+
+      .header-cta {
+        --od-icon-size: 16px;
+      }
+
+      /* B. Hero Section */
+      .hero-section {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        padding-block: calc(76px + var(--space-6)) var(--space-8);
+      }
+
+      .hero-grid {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: minmax(0, 600px);
+        align-items: center;
+      }
+
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-3);
+      }
+
+      .hero-eyebrow {
+        font-size: var(--text-sm);
+        font-weight: 600;
+        color: #c7ddd0;
+        letter-spacing: 0.01em;
+      }
+
+      .hero-title {
+        font-size: var(--text-hero);
+        font-weight: 700;
+        line-height: 1.08;
+        letter-spacing: -0.028em;
+        color: #ffffff;
+        max-width: 14ch;
+      }
+
+      .hero-copy {
+        font-size: var(--text-lg);
+        line-height: 1.6;
+        color: #e4ece7;
+        max-width: 50ch;
+      }
+
+      .hero-actions {
+        margin-top: var(--space-1);
+        width: 100%;
+      }
+
+      .hero-cta {
+        --od-icon-size: 18px;
+        background-color: var(--bg-sage);
+        color: var(--primary-active);
+        border-color: rgba(255, 255, 255, 0.25);
+      }
+
+      @media (hover: hover) {
+        .hero-cta:hover {
+          background-color: #ffffff;
+          color: var(--primary-active);
+          transform: translateY(-1px);
+        }
+      }
+
+      .hero-cta:active {
+        background-color: #dce8df;
+        color: var(--primary-active);
+        transform: translateY(0);
+      }
+
+      .hero-cta:focus-visible {
+        outline-color: #e5eee7;
+        box-shadow: 0 0 0 3px rgba(229, 238, 231, 0.42);
+      }
+
+      .hero-media-frame {
+        display: none;
+      }
+
+      .hero-media {
+        border-radius: calc(var(--radius-card) - 6px);
+        --od-ratio: 1920 / 850;
+      }
+
+      /* C. Frequently Asked Questions */
+      .faq-section {
+        scroll-margin-top: 80px;
+        background-color: var(--bg);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        padding-block: var(--space-10);
+      }
+
+      .faq-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+        align-items: start;
+        gap: var(--space-6);
+      }
+
+      .faq-intro {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+      }
+
+      .section-eyebrow {
+        font-size: var(--text-sm);
+        font-weight: 600;
+        color: var(--primary);
+      }
+
+      .section-title {
+        font-size: var(--text-h2);
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -0.024em;
+        color: var(--text-primary);
+      }
+
+      .section-lead {
+        font-size: var(--text-base);
+        color: var(--text-secondary);
+        max-width: 38ch;
+      }
+
+      .faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .faq-item {
+        background-color: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-card);
+        box-shadow: var(--shadow-subtle);
+        transition: border-color var(--duration-fast) var(--ease-out);
+      }
+
+      .faq-item[data-open="true"] {
+        border-color: var(--border-strong);
+      }
+
+      .faq-heading {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+
+      .faq-trigger {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-2);
+        min-height: 60px;
+        padding: 18px 24px;
+        border: 0;
+        border-radius: var(--radius-card);
+        background: transparent;
+        text-align: left;
+        font-size: var(--text-base);
+        font-weight: 600;
+        line-height: 1.45;
+        color: var(--text-primary);
+        cursor: pointer;
+      }
+
+      @media (hover: hover) {
+        .faq-trigger:hover {
+          background-color: var(--bg);
+        }
+      }
+
+      .faq-chevron {
+        --od-icon-size: 20px;
+        color: var(--primary);
+        transition: transform var(--duration-base) var(--ease-out);
+      }
+
+      .faq-trigger[aria-expanded="true"] .faq-chevron {
+        transform: rotate(180deg);
+      }
+
+      .faq-panel {
+        padding: 0 24px 20px;
+        border-top: 1px solid var(--border);
+      }
+
+      .faq-panel[data-animating="enter"] {
+        animation: faqReveal var(--duration-base) var(--ease-out);
+      }
+
+      .faq-answer {
+        padding-top: 16px;
+        font-size: var(--text-base);
+        line-height: 1.65;
+        color: var(--text-secondary);
+        max-width: 66ch;
+      }
+
+      @keyframes faqReveal {
+        from {
+          opacity: 0;
+          transform: translateY(-4px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* D. Footer */
+      .site-footer {
+        background-color: var(--surface);
+        padding-block: var(--space-8) var(--space-5);
+      }
+
+      .footer-top {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+        gap: var(--space-5);
+        align-items: start;
+        padding-bottom: var(--space-5);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .footer-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .footer-title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        letter-spacing: -0.015em;
+        color: var(--text-primary);
+      }
+
+      .footer-desc {
+        font-size: var(--text-sm);
+        color: var(--text-secondary);
+        max-width: 48ch;
+      }
+
+      .footer-actions-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: var(--space-2);
+      }
+
+      .footer-nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+      }
+
+      .footer-cta {
+        --od-icon-size: 16px;
+      }
+
+      .footer-contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        list-style: none;
+        padding: 0;
+        font-size: var(--text-sm);
+        color: var(--text-secondary);
+      }
+
+      .footer-contact-link {
+        color: var(--primary);
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+
+      @media (hover: hover) {
+        .footer-contact-link:hover {
+          color: var(--primary-hover);
+        }
+      }
+
+      .footer-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-2);
+        padding-top: var(--space-3);
+        font-size: var(--text-sm);
+        color: var(--text-secondary);
+      }
+
+      /* Unconfigured WhatsApp Helper Dialog */
+      .setup-dialog {
+        width: min(480px, calc(100vw - 32px));
+        padding: 0;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-card);
+        background-color: var(--surface);
+        color: var(--text-primary);
+        box-shadow: 0 20px 48px rgba(38, 53, 45, 0.16);
+      }
+
+      .setup-dialog::backdrop {
+        background: rgba(38, 53, 45, 0.42);
+      }
+
+      .dialog-body {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+        padding: var(--space-3);
+      }
+
+      .dialog-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .dialog-title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+
+      .dialog-close {
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-btn);
+        background: var(--surface);
+        color: var(--text-primary);
+        cursor: pointer;
+        --od-icon-size: 18px;
+      }
+
+      .dialog-text {
+        font-size: var(--text-sm);
+        color: var(--text-secondary);
+        line-height: 1.55;
+      }
+
+      .dialog-message-box {
+        padding: 12px 16px;
+        border-radius: var(--radius-btn);
+        border: 1px solid var(--border);
+        background-color: var(--bg);
+        font-size: var(--text-sm);
+        color: var(--text-primary);
+      }
+
+      .dialog-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 8px;
+      }
+
+      .copy-feedback {
+        font-size: var(--text-sm);
+        font-weight: 500;
+        color: var(--primary);
+      }
+
+      /* Responsive Breakpoints: 1024px / 768px / 375px */
+      /* Keep hero image backdrop for landscape desktop only; restore framed hero layout on smaller screens and portrait ratios */
+      @media (max-width: 1023px), (orientation: portrait) {
+        :root {
+          --gutter: 24px;
+        }
+
+        .site-header {
+          position: sticky;
+        }
+
+        .page-backdrop {
+          display: none;
+        }
+
+        .hero-section {
+          display: block;
+          min-height: auto;
+          padding-block: var(--space-6) var(--space-8);
+        }
+
+        .hero-grid,
+        .faq-layout,
+        .footer-top {
+          grid-template-columns: 1fr;
+          gap: var(--space-4);
+        }
+
+        .footer-actions-col {
+          align-items: flex-start;
+        }
+
+        .footer-nav {
+          justify-content: flex-start;
+        }
+
+        .hero-eyebrow {
+          color: var(--primary);
+        }
+
+        .hero-title {
+          color: var(--text-primary);
+          max-width: 18ch;
+        }
+
+        .hero-copy {
+          color: var(--text-secondary);
+        }
+
+        .hero-cta {
+          background-color: var(--primary);
+          color: var(--primary-on);
+          border-color: transparent;
+        }
+
+        .hero-cta:active {
+          background-color: var(--primary-active);
+          color: var(--primary-on);
+        }
+
+        .hero-cta:focus-visible {
+          outline-color: var(--primary);
+          box-shadow: var(--focus-ring);
+        }
+
+        .hero-media-frame {
+          display: block;
+          margin: 0;
+          border-radius: var(--radius-card);
+          border: 1px solid var(--border);
+          background-color: var(--surface);
+          padding: 8px;
+          box-shadow: var(--shadow-subtle);
+          overflow: hidden;
+        }
+
+        .faq-section {
+          padding-block: var(--space-8);
+        }
+      }
+
+      @media (max-width: 1023px) and (hover: hover), (orientation: portrait) and (hover: hover) {
+        .hero-cta:hover {
+          background-color: var(--primary-hover);
+          color: var(--primary-on);
+        }
+      }
+
+      @media (max-width: 639px) {
+        :root {
+          --gutter: 16px;
+        }
+
+        .header-inner {
+          flex-wrap: wrap;
+          row-gap: 8px;
+          min-height: 64px;
+        }
+
+        .brand-logo {
+          width: 128px;
+        }
+
+        .header-nav {
+          width: 100%;
+          justify-content: space-between;
+          gap: 8px;
+        }
+
+        .nav-links {
+          gap: 8px;
+        }
+
+        .nav-link {
+          padding: 8px 10px;
+        }
+
+        .header-cta {
+          padding: 10px 14px;
+          font-size: 0.8125rem;
+        }
+
+        .hero-section {
+          padding-block: var(--space-4) var(--space-6);
+        }
+
+        .hero-copy {
+          font-size: var(--text-base);
+        }
+
+        .hero-cta {
+          width: 100%;
+        }
+
+        .faq-section {
+          padding-block: var(--space-6);
+        }
+
+        .faq-trigger {
+          padding: 16px;
+        }
+
+        .faq-panel {
+          padding: 0 16px 16px;
+        }
+
+        .site-footer {
+          padding-block: var(--space-6) var(--space-4);
+        }
+
+        .footer-nav {
+          width: 100%;
+        }
+
+        .footer-cta {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 419px) {
+        .header-cta-label-full {
+          display: none;
+        }
+      }
+
+      @media (min-width: 420px) {
+        .header-cta-label-short {
+          display: none;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- A. Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand-link" href="#top">
+          <img class="brand-logo" id="header-brand-logo" src="/api/projects/7e463dd7-39a9-4da7-9e2c-5d6ef7aabb86/raw/logo.png?workspaceId=egowzfctzzglnvp2bqbp901o&amp;workspaceMemberId=uyqj8jbug8zwhea8djp4u61f" width="300" height="87" alt="Annapoorneshwari Tours &amp; Travellers" decoding="async">
+        </a>
+
+        <nav class="header-nav" aria-label="Primary navigation">
+          <div class="nav-links">
+            <a class="nav-link" href="index.html" aria-current="page">Home</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </div>
+          
+          <a class="btn btn-primary header-cta" href="#whatsapp-enquiry" data-whatsapp-cta="header">
+            <svg class="od-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            <span class="header-cta-label-full" id="header-cta-label">Chat on WhatsApp</span>
+            <span class="header-cta-label-short">WhatsApp</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- B. Hero Section -->
+      <section class="hero-section" id="top" aria-labelledby="hero-title">
+        <div class="page-backdrop" aria-hidden="true">
+          <img class="page-backdrop-img" src="/api/projects/7e463dd7-39a9-4da7-9e2c-5d6ef7aabb86/raw/assets/images/banner7.jpg?workspaceId=egowzfctzzglnvp2bqbp901o&amp;workspaceMemberId=uyqj8jbug8zwhea8djp4u61f" width="1920" height="850" alt="" decoding="async">
+          <div class="page-backdrop-scrim"></div>
+        </div>
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="hero-eyebrow">Bangalore · Airport, Employee &amp; Pan-India Travel</p>
+            <h1 class="hero-title" id="hero-title">Every journey, thoughtfully planned.</h1>
+            <p class="hero-copy">
+              Based in Bangalore, Annapoorneshwari Tours &amp; Travellers provides airport
+              pick &amp; drop, corporate employee and school/college commutes, tourist travel,
+              and weekly or monthly vehicle contracts across Karnataka and Pan-India.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg hero-cta" href="#whatsapp-enquiry" data-whatsapp-cta="hero">
+                <svg class="od-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                <span id="hero-cta-label">Chat with us on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <figure class="hero-media-frame">
+            <img class="od-media hero-media" src="assets/images/banner7.jpg" width="1920" height="850" alt="Annapoorneshwari Tours &amp; Travellers fleet and travel services across Bangalore, Karnataka, and Pan-India" decoding="async">
+          </figure>
+        </div>
+      </section>
+
+      <!-- C. Frequently Asked Questions -->
+      <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+        <div class="container faq-layout">
+          <div class="faq-intro">
+            <p class="section-eyebrow">Frequently Asked Questions</p>
+            <h2 class="section-title" id="faq-heading">Clear answers before you message us</h2>
+            <p class="section-lead">
+              How enquiries, custom travel plans, and direct WhatsApp conversations work with our
+              team.
+            </p>
+          </div>
+
+          <div class="faq-list" id="faq-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- D. Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <p class="footer-title" id="footer-brand-name">Annapoorneshwari Tours &amp; Travellers</p>
+            <p class="footer-desc" id="footer-brand-desc">
+              Bangalore-based airport transfers, employee and school/college pick &amp; drop, and
+              tourist transportation across Karnataka and Pan-India.
+            </p>
+            <ul class="footer-contact-list" id="footer-contact-list" hidden=""></ul>
+          </div>
+
+          <div class="footer-actions-col">
+            <nav class="footer-nav" aria-label="Footer navigation">
+              <a class="nav-link" href="index.html" aria-current="page">Home</a>
+              <a class="nav-link" href="gallery.html">Gallery</a>
+              
+              <a class="btn btn-primary footer-cta" href="#whatsapp-enquiry" data-whatsapp-cta="footer">
+                <svg class="od-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                <span id="footer-cta-label">Chat on WhatsApp</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p id="footer-copyright">
+            © 2026 Annapoorneshwari Tours &amp; Travellers. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Native modal dialog shown only when WhatsApp phoneNumber is not yet configured -->
+    <dialog class="setup-dialog" id="whatsapp-setup-dialog" aria-labelledby="whatsapp-setup-title">
+      <div class="dialog-body">
+        <div class="dialog-header">
+          <h2 class="dialog-title" id="whatsapp-setup-title">WhatsApp number not configured yet</h2>
+          <button type="button" class="dialog-close" id="whatsapp-dialog-close" aria-label="Close dialog">
+            <svg class="od-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <p class="dialog-text">
+          Add your verified WhatsApp phone number (including country code, digits only) to
+          <code>site-config.js</code> under <code>whatsapp.phoneNumber</code> to activate direct
+          WhatsApp redirection.
+        </p>
+        <div class="dialog-message-box" id="whatsapp-prefill-preview"></div>
+        <div class="dialog-actions">
+          <button type="button" class="btn btn-primary" id="whatsapp-copy-btn">
+            Copy enquiry message
+          </button>
+          <span class="copy-feedback" id="whatsapp-copy-feedback" role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="/api/projects/7e463dd7-39a9-4da7-9e2c-5d6ef7aabb86/raw/site-config.js?workspaceId=egowzfctzzglnvp2bqbp901o&amp;workspaceMemberId=uyqj8jbug8zwhea8djp4u61f"></script>
+    <script>
+      (function () {
+        var config = window.SITE_CONFIG || {};
+        var brand = config.brand || {};
+        var whatsapp = config.whatsapp || {};
+        var contact = config.contact || {};
+        var faqs = Array.isArray(config.faqs) ? config.faqs : [];
+
+        var cleanNumber = String(whatsapp.phoneNumber || "").replace(/\D/g, "");
+        var prefilledMessage = String(
+          whatsapp.prefilledMessage ||
+            "Hello Annapoorneshwari Tours & Travellers, I would like to enquire about your travel services."
+        );
+        var whatsappUrl = cleanNumber
+          ? "https://wa.me/" + cleanNumber + "?text=" + encodeURIComponent(prefilledMessage)
+          : "";
+
+        // Populate brand & CTA labels safely
+        var brandName = brand.name || "Annapoorneshwari Tours & Travellers";
+        var headerBrandLogo = document.getElementById("header-brand-logo");
+        var footerBrandEl = document.getElementById("footer-brand-name");
+        var footerDescEl = document.getElementById("footer-brand-desc");
+        var footerCopyEl = document.getElementById("footer-copyright");
+        var headerCtaLabel = document.getElementById("header-cta-label");
+        var heroCtaLabel = document.getElementById("hero-cta-label");
+        var footerCtaLabel = document.getElementById("footer-cta-label");
+
+        if (headerBrandLogo) headerBrandLogo.alt = brandName;
+        if (footerBrandEl) footerBrandEl.textContent = brandName;
+        if (footerDescEl && brand.shortDescription) {
+          footerDescEl.textContent = brand.shortDescription;
+        }
+        if (footerCopyEl) {
+          var year = brand.copyrightYear || "2026";
+          footerCopyEl.textContent = "\u00A9 " + year + " " + brandName + ". All rights reserved.";
+        }
+        if (headerCtaLabel && whatsapp.headerCtaLabel) {
+          headerCtaLabel.textContent = whatsapp.headerCtaLabel;
+        }
+        if (heroCtaLabel && whatsapp.primaryCtaLabel) {
+          heroCtaLabel.textContent = whatsapp.primaryCtaLabel;
+        }
+        if (footerCtaLabel && whatsapp.headerCtaLabel) {
+          footerCtaLabel.textContent = whatsapp.headerCtaLabel;
+        }
+
+        // Bind WhatsApp CTAs
+        var dialog = document.getElementById("whatsapp-setup-dialog");
+        var dialogCloseBtn = document.getElementById("whatsapp-dialog-close");
+        var dialogPreview = document.getElementById("whatsapp-prefill-preview");
+        var dialogCopyBtn = document.getElementById("whatsapp-copy-btn");
+        var dialogFeedback = document.getElementById("whatsapp-copy-feedback");
+        var lastTrigger = null;
+
+        if (dialogPreview) {
+          dialogPreview.textContent = prefilledMessage;
+        }
+
+        var ctaLinks = document.querySelectorAll("[data-whatsapp-cta]");
+        ctaLinks.forEach(function (link) {
+          if (whatsappUrl) {
+            link.setAttribute("href", whatsappUrl);
+            link.setAttribute("target", "_blank");
+            link.setAttribute("rel", "noopener noreferrer");
+          } else {
+            link.setAttribute("href", "#whatsapp-enquiry");
+            link.addEventListener("click", function (event) {
+              event.preventDefault();
+              lastTrigger = link;
+              if (dialogFeedback) dialogFeedback.textContent = "";
+              if (dialog && typeof dialog.showModal === "function") {
+                dialog.showModal();
+                if (dialogCloseBtn) dialogCloseBtn.focus();
+              }
+            });
+          }
+        });
+
+        function closeSetupDialog() {
+          if (dialog && dialog.open) {
+            dialog.close();
+          }
+          if (lastTrigger && typeof lastTrigger.focus === "function") {
+            lastTrigger.focus();
+          }
+        }
+
+        if (dialogCloseBtn) {
+          dialogCloseBtn.addEventListener("click", closeSetupDialog);
+        }
+
+        if (dialog) {
+          dialog.addEventListener("cancel", function (event) {
+            event.preventDefault();
+            closeSetupDialog();
+          });
+          dialog.addEventListener("click", function (event) {
+            if (event.target === dialog) {
+              closeSetupDialog();
+            }
+          });
+        }
+
+        if (dialogCopyBtn) {
+          dialogCopyBtn.addEventListener("click", function () {
+            if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+              navigator.clipboard.writeText(prefilledMessage).then(
+                function () {
+                  if (dialogFeedback) dialogFeedback.textContent = "Message copied.";
+                },
+                function () {
+                  if (dialogFeedback) {
+                    dialogFeedback.textContent = "Copy unavailable — please select the text above.";
+                  }
+                }
+              );
+            } else if (dialogFeedback) {
+              dialogFeedback.textContent = "Select the message text above to copy.";
+            }
+          });
+        }
+
+        // Render verified footer contact items only when provided
+        var contactList = document.getElementById("footer-contact-list");
+        if (contactList) {
+          var entries = [
+            { label: "Phone", value: contact.phoneDisplay, hrefPrefix: "tel:" },
+            { label: "Email", value: contact.email, hrefPrefix: "mailto:" },
+            { label: "Address", value: contact.address },
+            { label: "Hours", value: contact.hours }
+          ].filter(function (entry) {
+            return typeof entry.value === "string" && entry.value.trim().length > 0;
+          });
+
+          if (entries.length > 0) {
+            entries.forEach(function (entry) {
+              var li = document.createElement("li");
+              var cleanValue = entry.value.trim();
+              li.appendChild(document.createTextNode(entry.label + ": "));
+              if (entry.hrefPrefix === "tel:") {
+                var telDigits = cleanValue.replace(/[^\d+]/g, "");
+                var telLink = document.createElement("a");
+                telLink.className = "footer-contact-link";
+                telLink.href = "tel:" + telDigits;
+                telLink.textContent = cleanValue;
+                li.appendChild(telLink);
+              } else if (entry.hrefPrefix === "mailto:") {
+                var mailLink = document.createElement("a");
+                mailLink.className = "footer-contact-link";
+                mailLink.href = "mailto:" + cleanValue;
+                mailLink.textContent = cleanValue;
+                li.appendChild(mailLink);
+              } else {
+                li.appendChild(document.createTextNode(cleanValue));
+              }
+              contactList.appendChild(li);
+            });
+            contactList.removeAttribute("hidden");
+          }
+        }
+
+        // Render accessible FAQ accordion from SITE_CONFIG.faqs
+        var faqContainer = document.getElementById("faq-list");
+        if (faqContainer) {
+          var triggers = [];
+
+          faqs.forEach(function (item, index) {
+            var itemId = item.id ? String(item.id) : "item-" + index;
+            var btnId = "faq-btn-" + itemId;
+            var panelId = "faq-panel-" + itemId;
+
+            var article = document.createElement("article");
+            article.className = "faq-item";
+            article.setAttribute("data-open", "false");
+
+            var heading = document.createElement("h3");
+            heading.className = "faq-heading";
+
+            var button = document.createElement("button");
+            button.type = "button";
+            button.className = "faq-trigger";
+            button.id = btnId;
+            button.setAttribute("aria-expanded", "false");
+            button.setAttribute("aria-controls", panelId);
+
+            var qText = document.createElement("span");
+            qText.textContent = String(item.question || "");
+            button.appendChild(qText);
+
+            var chevron = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            chevron.setAttribute("class", "od-icon faq-chevron");
+            chevron.setAttribute("viewBox", "0 0 24 24");
+            chevron.setAttribute("fill", "none");
+            chevron.setAttribute("stroke", "currentColor");
+            chevron.setAttribute("stroke-width", "2");
+            chevron.setAttribute("stroke-linecap", "round");
+            chevron.setAttribute("stroke-linejoin", "round");
+            chevron.setAttribute("aria-hidden", "true");
+
+            var poly = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+            poly.setAttribute("points", "6 9 12 15 18 9");
+            chevron.appendChild(poly);
+            button.appendChild(chevron);
+
+            heading.appendChild(button);
+            article.appendChild(heading);
+
+            var panel = document.createElement("div");
+            panel.className = "faq-panel";
+            panel.id = panelId;
+            panel.setAttribute("role", "region");
+            panel.setAttribute("aria-labelledby", btnId);
+            panel.setAttribute("hidden", "");
+
+            var answer = document.createElement("p");
+            answer.className = "faq-answer";
+            answer.textContent = String(item.answer || "");
+            panel.appendChild(answer);
+
+            article.appendChild(panel);
+            faqContainer.appendChild(article);
+            triggers.push(button);
+
+            button.addEventListener("click", function () {
+              var isExpanded = button.getAttribute("aria-expanded") === "true";
+              if (isExpanded) {
+                button.setAttribute("aria-expanded", "false");
+                article.setAttribute("data-open", "false");
+                panel.removeAttribute("data-animating");
+                panel.setAttribute("hidden", "");
+              } else {
+                button.setAttribute("aria-expanded", "true");
+                article.setAttribute("data-open", "true");
+                panel.setAttribute("data-animating", "enter");
+                panel.removeAttribute("hidden");
+              }
+            });
+
+            button.addEventListener("keydown", function (event) {
+              var currentIndex = triggers.indexOf(button);
+              if (currentIndex === -1) return;
+
+              var nextIndex = -1;
+              if (event.key === "ArrowDown") {
+                nextIndex = (currentIndex + 1) % triggers.length;
+              } else if (event.key === "ArrowUp") {
+                nextIndex = (currentIndex - 1 + triggers.length) % triggers.length;
+              } else if (event.key === "Home") {
+                nextIndex = 0;
+              } else if (event.key === "End") {
+                nextIndex = triggers.length - 1;
+              }
+
+              if (nextIndex !== -1) {
+                event.preventDefault();
+                triggers[nextIndex].focus();
+              }
+            });
+          });
+        }
+      })();
+    </script>
+  
+
+</body></html>
