@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Aircraft taking off beside an airport terminal at sunrise">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfeaf1"/>
+      <stop offset="0.6" stop-color="#eef3ef"/>
+      <stop offset="1" stop-color="#f7efe0"/>
+    </linearGradient>
+    <linearGradient id="runway" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a5c53"/>
+      <stop offset="1" stop-color="#26382f"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c3d8e0"/>
+      <stop offset="1" stop-color="#8faab4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1240" cy="290" r="130" fill="#f4d9a8" opacity="0.55"/>
+  <circle cx="1240" cy="290" r="78" fill="#f2cf96" opacity="0.85"/>
+
+  <path d="M0 610c210-40 400-28 600 8 220 40 430 26 640-14 130-24 240-22 360 6v90H0Z" fill="#c2d3ca" opacity="0.65"/>
+  <path d="M0 650c240-26 470-18 700 12 230 30 480 20 900-20v60H0Z" fill="#a7bfb3"/>
+
+  <g>
+    <rect x="90" y="440" width="560" height="168" rx="14" fill="#e9efeb"/>
+    <rect x="90" y="440" width="560" height="42" rx="14" fill="#355c49"/>
+    <rect x="120" y="512" width="500" height="58" rx="8" fill="url(#glass)"/>
+    <path d="M140 512v58M220 512v58M300 512v58M380 512v58M460 512v58M540 512v58" stroke="#e9efeb" stroke-width="8"/>
+    <rect x="596" y="486" width="120" height="34" rx="12" fill="#cfdcd5"/>
+    <rect x="676" y="500" width="94" height="18" rx="9" fill="#b7c9c0"/>
+  </g>
+
+  <g transform="translate(760 350) rotate(-9)">
+    <path d="M0 92 430 44c36-4 62 2 76 22l14 22c8 14 2 26-16 28L110 156c-28 3-50-2-68-18L4 118C-6 110-8 100 0 92Z" fill="#355c49"/>
+    <path d="M196 92 120-54h54l118 138Z" fill="#2b4c3c"/>
+    <path d="M64 52 6 8h36l74 34Z" fill="#2b4c3c"/>
+    <path d="M196 116 120 262h54l118-138Z" fill="#2f5243" opacity="0.85"/>
+    <circle cx="438" cy="84" r="8" fill="#e5eee7"/>
+    <circle cx="410" cy="86" r="8" fill="#e5eee7"/>
+    <circle cx="382" cy="89" r="8" fill="#e5eee7"/>
+    <rect x="330" y="40" width="88" height="6" rx="3" fill="#d9a441"/>
+  </g>
+
+  <path d="M300 1000 760 690c34-24 80-24 114 0l460 310Z" fill="url(#runway)"/>
+  <path d="M812 1000c-6-100-6-200 0-300" stroke="#f0e9da" stroke-width="12" stroke-linecap="round" stroke-dasharray="52 44" opacity="0.7"/>
+  <path d="M370 944h860" stroke="#f0e9da" stroke-width="4" opacity="0.28"/>
+  <path d="M470 842h660" stroke="#f0e9da" stroke-width="3" opacity="0.2"/>
+
+  <g fill="#d9a441" opacity="0.9">
+    <circle cx="330" cy="880" r="7"/>
+    <circle cx="1260" cy="880" r="7"/>
+    <circle cx="260" cy="920" r="5"/>
+    <circle cx="1340" cy="920" r="5"/>
+  </g>
+</svg>
